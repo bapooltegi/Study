@@ -6,10 +6,14 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <div id="login-form">
-        <input type="text" placeholder="What is your name?"/>
+    <!--submit 버튼으로 만들고 싶다면 input이 form 안에 들어가 있어야됨. submit은 페이지를 새로고침함.-->
+    <form id="login-form" class="hidden">
+        <!--input type='text' 텍스트타입은 텍스트인풋필드임 ( 텍스트 받아주는 기능 )--> 
+        <input required maxlength="8" type="text" placeholder="What is your name?"/>
         <button>Log In</button>
-    </div>
+    </form>
+
+    <h1 id="greeting" class="hidden"></h1>
 
     <script src="./js/app.js" charset="utf-8"></script>
   </body>
